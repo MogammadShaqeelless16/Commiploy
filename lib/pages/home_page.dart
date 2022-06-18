@@ -1,8 +1,3 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:commiploy/pages/user%20screens/add_job_page.dart';
-import 'package:commiploy/pages/user%20screens/jobs_page.dart';
-import 'package:commiploy/pages/user%20screens/message_page.dart';
-import 'package:commiploy/pages/user%20screens/settings_page.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
@@ -109,6 +104,67 @@ class _HomePageState extends State<HomePage> {
             ),
         ),
       ),
+
+      body: Column(
+        children: [
+          SizedBox(height: 10,),
+          Padding(
+            padding: const EdgeInsets.only(left: 25.0),
+          child: Text("Discover a New Path",style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 24,
+          ),
+          ),
+          ),
+          SizedBox(height: 10,),
+          //Search bar
+
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 25.0),
+            child: Row(
+              children: [
+                Container(
+                decoration: BoxDecoration(
+                    color: Colors.grey[200],
+                  border: Border.all(color: Colors.white),
+                  borderRadius: BorderRadius.circular(12)
+                ),
+                child: Row(
+                  children: [
+                    Container(
+                      height: 30,
+                      child: Icon(Icons.search_rounded),
+                      color: Colors.grey[600],
+                    ),
+                    TextField(
+                        decoration: InputDecoration(
+                        border: InputBorder.none,
+                        hintText: 'Search for a Job',
+                    ),
+                      ),
+                  ],
+                ),
+                ),
+                Container(height: 50,
+                  decoration: BoxDecoration(
+                      color: Colors.grey[800],
+                      border: Border.all(color: Colors.white),
+                      borderRadius: BorderRadius.circular(12)
+                  ),
+                  child: Icon(Icons.search_rounded,
+                  color: Colors.white,
+                  ),
+
+                )
+              ],
+            ),
+          ),
+        ],
+
+      ),
+
+
+
 
     );
   }

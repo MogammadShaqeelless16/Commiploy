@@ -203,6 +203,7 @@ class _LoginPageState extends State<LoginPage> {
                               final provider = Provider.of<GoogleSignInProvider>(context, listen:false);
                               provider.googleLogin();
                             },
+                            //updates
                             ),
                           ),
                         Padding(
