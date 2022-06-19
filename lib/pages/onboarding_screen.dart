@@ -1,4 +1,4 @@
-import 'package:commiploy/pages/home_page.dart';
+import 'package:commiploy/pages/home%20screens/home_page.dart';
 import 'package:commiploy/pages/intro%20screens/intro_page_1.dart';
 import 'package:commiploy/pages/intro%20screens/intro_page_2.dart';
 import 'package:commiploy/pages/intro%20screens/intro_page_3.dart';

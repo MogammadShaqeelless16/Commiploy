@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
       //Change all colors
       /*theme: ThemeData( primarySwatch: Colors.deepPurple),*/
        debugShowCheckedModeBanner: false,
-      home: AnimatedSplashScreen(splash: Container(child: Lottie.network('https://assets4.lottiefiles.com/packages/lf20_09346fcf.json', width: 250,)),  duration: 10000,
+      home: AnimatedSplashScreen(splash: Container(child: Lottie.network('https://assets4.lottiefiles.com/packages/lf20_09346fcf.json', width: 250,)),  duration: 1000,
             splashTransition : SplashTransition.fadeTransition
           , nextScreen: MainPage()),
     ),
