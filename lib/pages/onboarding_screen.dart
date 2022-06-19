@@ -1,9 +1,11 @@
-import 'package:commiploy/pages/home%20screens/home_page.dart';
+
 import 'package:commiploy/pages/intro%20screens/intro_page_1.dart';
 import 'package:commiploy/pages/intro%20screens/intro_page_2.dart';
 import 'package:commiploy/pages/intro%20screens/intro_page_3.dart';
 import 'package:flutter/material.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+
+import '../Widgets/Menubar.dart';
 
 class OnBoardingScreen extends StatefulWidget {
   const OnBoardingScreen({Key? key}) : super(key: key);
@@ -65,7 +67,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                     :GestureDetector(
                   onTap: (){
                     Navigator.push(context,MaterialPageRoute(builder: (context){
-                      return HomePage();
+                      return Menubar();
                         },)
                       );
                     },
