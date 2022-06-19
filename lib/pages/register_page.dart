@@ -75,7 +75,7 @@ class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.grey[300],
+        backgroundColor: Colors.white,
         body: SafeArea(
           child:Center(
             child: SingleChildScrollView(
@@ -266,7 +266,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children:[
                       Text(
-                        'I am a member!',
+                        'I am a member! ',
                         style:TextStyle(
                           fontWeight:FontWeight.bold,
                         ),

@@ -29,19 +29,28 @@ class _LoginPageState extends State<LoginPage> {
   //Sync code to google  Database
   Future signIn() async {
     //Loading Cicle
-    showDialog(
-        context: context,
-        builder: (context) {
-          return Center(child: CircularProgressIndicator());
-        }
-    );
-    await FirebaseAuth.instance.signInWithEmailAndPassword(
-        email: _emailController.text.trim(),
-        password: _passwordController.text.trim()
-    );
-
-    Navigator.of(context).pop();
+    try {
+      await FirebaseAuth.instance.signInWithEmailAndPassword(
+      email: _emailController.text.trim(),
+      password: _passwordController.text.trim());
+      showDialog(
+          context: context,
+          builder: (context) {
+            return Center(child: CircularProgressIndicator());
+          }
+      );
+          } on FirebaseAuthException catch (e) {
+        print(e);
+        showDialog(
+            context: context,
+            builder: (context) {
+              return AlertDialog(
+                content: Text("Sorry, there is no account associated with this email address."),
+              );
+            });
+      }
   }
+
 
   //Memory management
   @override

@@ -34,7 +34,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
           context: context,
           builder: (context) {
             return AlertDialog(
-              content: Text(e.message.toString()),
+              content: Text("Sorry, there is no account associated with this email address."),
             );
       });
     }
@@ -44,7 +44,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.deepPurple[200],
+        backgroundColor: Colors.deepPurple,
         elevation: 0,
       ),
       body: Column(

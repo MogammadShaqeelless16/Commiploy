@@ -20,10 +20,6 @@ class Menubar extends StatefulWidget {
 class _MenubarState extends State<Menubar> {
   int _selectIndex = 0;
 
-
-
- 
-
   //Create a list of document Id
 
 /*  List<String> docIDs = [];
@@ -50,6 +46,9 @@ class _MenubarState extends State<Menubar> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
+        title:Text("Commiploy",
+          style: TextStyle(fontSize: 16, color: Colors.black,),
+        ),
         actions:[
           Padding(
             padding: const EdgeInsets.all(8.0),
@@ -69,9 +68,6 @@ class _MenubarState extends State<Menubar> {
                 icon: Icon(Icons.person,color: Colors.black,),),
           ),
         ],
-        title:Text("Commiploy",
-        style: TextStyle(fontSize: 16, color: Colors.black,),
-        ),
         /*title:Text(user.email!,
         style: TextStyle(fontSize: 16),
         ),
