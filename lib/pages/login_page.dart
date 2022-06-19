@@ -28,7 +28,7 @@ class _LoginPageState extends State<LoginPage> {
 
   //Sync code to google  Database
   Future signIn() async {
-    //Loading Cicle
+
     try {
       await FirebaseAuth.instance.signInWithEmailAndPassword(
       email: _emailController.text.trim(),
@@ -50,8 +50,6 @@ class _LoginPageState extends State<LoginPage> {
             });
       }
   }
-
-
   //Memory management
   @override
   void dispose() {
