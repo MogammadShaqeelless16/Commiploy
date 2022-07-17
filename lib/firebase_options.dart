@@ -47,33 +47,32 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBF7th9kYkGf8xOpCSXmwEXz-CMXmlnHCg',
-    appId: '1:666819274100:web:ae6c89e0cd81cdbff57821',
-    messagingSenderId: '666819274100',
-    projectId: 'commiploy',
-    authDomain: 'commiploy.firebaseapp.com',
-    databaseURL: 'https://commiploy-default-rtdb.firebaseio.com',
-    storageBucket: 'commiploy.appspot.com',
-    measurementId: 'G-5DHCYBKSP8',
+    apiKey: 'AIzaSyCT8BloF5FpXv60_9y0Mf9oj7EqCAA_D_I',
+    appId: '1:909031550117:web:d898f42cdcf68b79a1314c',
+    messagingSenderId: '909031550117',
+    projectId: 'commiploy-354323',
+    authDomain: 'commiploy-354323.firebaseapp.com',
+    databaseURL: 'https://commiploy-354323-default-rtdb.firebaseio.com',
+    storageBucket: 'commiploy-354323.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyD6Unq1okMji5nu8rO4DrIKIe9sZgW5cnQ',
-    appId: '1:666819274100:android:c14b7aaf358ac3c1f57821',
-    messagingSenderId: '666819274100',
-    projectId: 'commiploy',
-    databaseURL: 'https://commiploy-default-rtdb.firebaseio.com',
-    storageBucket: 'commiploy.appspot.com',
+    apiKey: 'AIzaSyChhdryEfnJ3GoiymPghFZh93T7w5-lxKU',
+    appId: '1:909031550117:android:b1d88faa61f146caa1314c',
+    messagingSenderId: '909031550117',
+    projectId: 'commiploy-354323',
+    databaseURL: 'https://commiploy-354323-default-rtdb.firebaseio.com',
+    storageBucket: 'commiploy-354323.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyB1hmZr58EdEG_tNh89fMdleIwqF9q2eNM',
-    appId: '1:666819274100:ios:c3ddf41c9c29be6ff57821',
-    messagingSenderId: '666819274100',
-    projectId: 'commiploy',
-    databaseURL: 'https://commiploy-default-rtdb.firebaseio.com',
-    storageBucket: 'commiploy.appspot.com',
-    iosClientId: '666819274100-l8v8ljqjqifnvogea3mo1kudg6m8rm47.apps.googleusercontent.com',
+    apiKey: 'AIzaSyBMy-A5-19aEZixPx5i3FEtKFsC1YUoLXs',
+    appId: '1:909031550117:ios:08263f7e9a79e902a1314c',
+    messagingSenderId: '909031550117',
+    projectId: 'commiploy-354323',
+    databaseURL: 'https://commiploy-354323-default-rtdb.firebaseio.com',
+    storageBucket: 'commiploy-354323.appspot.com',
+    iosClientId: '909031550117-lt8mejeilf06n6kmhhk26rviqcbtn3oj.apps.googleusercontent.com',
     iosBundleId: 'com.softglitchsolutions.commiploy',
   );
 }
