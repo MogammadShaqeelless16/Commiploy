@@ -2,6 +2,10 @@ import 'package:commiploy/pages/user%20screens/profile_page.dart';
 import 'package:commiploy/pages/user%20screens/user_home_page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:commiploy/responsive/desktop_body.dart';
+import 'package:commiploy/responsive/mobile_body.dart';
+import 'package:commiploy/responsive/responsive_layout.dart';
+import 'package:commiploy/responsive/tablet_body.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import '../pages/user screens/add_job_page.dart';
 import '../pages/user screens/jobs_page.dart';
@@ -43,8 +47,9 @@ class _MenubarState extends State<Menubar> {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
-      appBar: AppBar(
+      /*AppBar: AppBar(
         backgroundColor: Colors.white,
         title:Text("Commiploy",
           style: TextStyle(fontSize: 16, color: Colors.black,),
@@ -79,10 +84,13 @@ class _MenubarState extends State<Menubar> {
             child: Icon(Icons.logout),
           )
         ],*/
+      ),*/
+      body: ResponsiveLayout(
+        mobileBody: const MobileScaffold(),
+        tabletBody: const TabletScaffold(),
+        desktopBody: const DesktopScaffold(),
       ),
-      body: Center(
-        child: _pages.elementAt(_selectIndex),
-      ),
+
 
 
       bottomNavigationBar: Container(

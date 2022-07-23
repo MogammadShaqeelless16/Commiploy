@@ -18,7 +18,7 @@ class _RegisterPageState extends State<RegisterPage> {
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
   final _confirmpasswordController = TextEditingController();
-  final _firstNameController = TextEditingController();
+  final _firstNameController = TextEditingController(); 
   final _lastNameController = TextEditingController();
   final _phoneNumberController = TextEditingController();
 
@@ -59,7 +59,6 @@ class _RegisterPageState extends State<RegisterPage> {
         'last name':lastName,
         'email':email,
         'phone number':phoneNumber,
-
       });
   }
 
